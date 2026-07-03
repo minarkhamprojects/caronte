@@ -1,0 +1,12 @@
+name = "caronte-license"
+main = "index.js"
+compatibility_date = "2025-02-01"
+
+# KV namespace para almacenar licenses
+[[kv_namespaces]]
+binding = "LICENSES"
+id = "LICENSES_ID_PLACEHOLDER"  # Reemplazar con `wrangler kv:namespace create "LICENSES"`
+
+# Secrets (configurar con wrangler secret put)
+# LICENSE_SECRET — para firmar license keys
+# ADMIN_SECRET — para acceder a /admin/stats
